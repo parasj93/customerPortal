@@ -1,0 +1,44 @@
+<div class="userData">
+  <h2>All Users List</h2>
+  <!-- <table>
+    <thead>
+      <tr>
+        <th>COMMON</th>
+        <th>NOBAG</th>
+        <th>BAG</th>
+        <th>FLEX</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cabins of selection;let i = index" [attr.data-index]="i">
+        <td *ngFor="let cabin of cabins;let j = index" [attr.data-index]="j">
+            {{cabin}}
+             <p *ngIf="i===j">
+              {{i}}{{j}}
+          </p> 
+        </td>
+        <!--<td><button class="btn btn-primary" [routerLink]="['editUser/',user.id]">Edit</button></td>
+        <td><Button class="btn btn-danger" (click)=deleteUser(user.id)>Delete</Button></td>
+        
+      </tr>
+    </tbody>
+  </table> --> 
+  <div>
+    commmon{{selection[0]}}
+  </div>
+  <div>
+      user{{  [1]}}
+  </div>
+  <div *ngFor="let cabins of selection;let i = index">
+    <div *ngFor="let cabin of cabins;let j = index">
+
+      <ul>
+        <li>
+          <p *ngIf="i===j">
+            {{i}} {{j}}
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

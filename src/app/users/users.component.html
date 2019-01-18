@@ -1,0 +1,21 @@
+<div class="userData">
+  <h2>All Users List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td><button class="btn btn-primary" [routerLink]="['editUser/',user.id]">Edit</button></td>
+        <td><Button class="btn btn-danger" (click)=deleteUser(user.id)>Delete</Button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

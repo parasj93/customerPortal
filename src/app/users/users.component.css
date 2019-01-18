@@ -1,0 +1,16 @@
+th,td{
+    border:1px solid black;
+    text-align: center;
+    padding: 3px 30px;
+}
+
+.userData{
+    width:100%;   
+}
+
+tbody tr:nth-child(even){
+    background-color: white
+}
+tbody tr:nth-child(odd){
+    background-color: #d3d3d3
+}

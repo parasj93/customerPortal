@@ -1,0 +1,137 @@
+{
+	"cabinAttribures": [
+		{
+			"cabin": "M",
+			"messageAttributes": {
+				"COMMON": [
+					{
+						"messageId": "COMMON1",
+						"message": "1",
+						"priority": 5
+					},
+					{
+						"messageId": "COMMON2",
+						"message": "2",
+						"priority": 10
+					},
+					{
+						"messageId": "COMMON3",
+						"message": "3",
+						"priority": 15
+					},
+					{
+						"messageId": "COMMON4",
+						"message": "4",
+						"priority": 20
+					},
+					{
+						"messageId": "COMMON5",
+						"message": "5",
+						"priority": 25
+					},
+					{
+						"messageId": "COMMON6",
+						"message": "6",
+						"priority": 30
+					}
+				],
+				"FLEX": [
+					{
+						"messageId": "FLEX1",
+						"message": "1",
+						"priority": 5
+					},
+					{
+						"messageId": "FLEX2",
+						"message": "2",
+						"priority": 10
+					},
+					{
+						"messageId": "FLEX3",
+						"message": "3",
+						"priority": 15
+					},
+					{
+						"messageId": "FLEX4",
+						"message": "4",
+						"priority": 20
+					},
+					{
+						"messageId": "FLEX5",
+						"message": "5",
+						"priority": 25
+					},
+					{
+						"messageId": "FLEX",
+						"message": "6",
+						"priority": 30
+					}
+				],
+				"HBO": [
+					{
+						"messageId": "HBO1",
+						"message": "1",
+						"priority": 5
+					},
+					{
+						"messageId": "HBO2",
+						"message": "2",
+						"priority": 10
+					},
+					{
+						"messageId": "HBO3",
+						"message": "3",
+						"priority": 15
+					},
+					{
+						"messageId": "HBO4",
+						"message": "4",
+						"priority": 20
+					},
+					{
+						"messageId": "HBO5",
+						"message": "5",
+						"priority": 25
+					},
+					{
+						"messageId": "HBO6",
+						"message": "6",
+						"priority": 30
+					}
+				],
+				"NONHBO": [
+					{
+						"messageId": "HBO1",
+						"message": "1",
+						"priority": 5
+					},
+					{
+						"messageId": "HBO2",
+						"message": "2",
+						"priority": 10
+					},
+					{
+						"messageId": "HBO3",
+						"message": "3",
+						"priority": 15
+					},
+					{
+						"messageId": "HBO4",
+						"message": "4",
+						"priority": 20
+					},
+					{
+						"messageId": "HBO5",
+						"message": "5",
+						"priority": 25
+					},
+					{
+						"messageId": "HBO6",
+						"message": "6",
+						"priority": 30
+					}
+				]
+			}
+		}
+	]
+}
