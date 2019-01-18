@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class UsersComponent implements OnInit {
 
   constructor(private apiService: ApiServiceService, private router: Router) { }
-  users: IUser;
-
+  users: IUser[];
+  userLength:number = 0;
   ngOnInit() {
     this.allUsers();
   }
@@ -20,6 +20,8 @@ export class UsersComponent implements OnInit {
 
   allUsers() {
     this.apiService.getUsers().subscribe((data) => {
+      this.userLength = data.length;  
+      console.log('userLength',this.userLength);
       this.users = data;
     })
   };

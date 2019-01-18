@@ -9,23 +9,23 @@ import { IUser } from '../Iuser'
 })
 export class ApiServiceService {
 
-  userDetails;
-
+  userDetails:IUser[];
   constructor(public http: HttpClient) { }
 
-  // getUsers(): Observable<IUser> {
+  getUsers(): Observable<IUser[]> {
+    console.log('data');
+    return this.http.get<IUser[]>('http://localhost:3000/users/').pipe(map((data) => {
+      
+    return this.userDetails = data;
+    }));
+  }
+
+  // getUsers() {
   //   console.log('data');
-  //   return this.http.get<IUser>('http://localhost:3000/users/').pipe(map((data) => {
+  //   return this.http.get('http://localhost:3000/users/').pipe(map((data) => {
   //     return this.userDetails = data;
   //   }));
   // }
-
-  getUsers() {
-    console.log('data');
-    return this.http.get('http://localhost:3000/users/').pipe(map((data) => {
-      return this.userDetails = data;
-    }));
-  }
 
   getUser(id) {
     return this.http.get<IUser>('http://localhost:3000/users/' + id).pipe(map(data => {
